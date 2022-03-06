@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Magical Sigil Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div-class left-pane">
+        <div class="div-class">
+            <label for="affirmation">Enter your affirmation</label><br><br>
+            <input type="text" id="affirmation" placeholder="Eg: I am a money magnet" required><br>
+        </div>
+        <div class="div-class">
+            <p>Select the grid style</p><br>
+            <input type="radio" value="grid3" id="grid3" name="grid" checked>
+            <label for="grid3">3x3 grid</label>
+            <input type="radio" value="grid5" id="grid5" name="grid">
+            <label for="grid5">5x5 grid</label>
+        </div><br>
+        <button onclick="draw_affirmation_sigil()">Generate Sigil</button>
+    </div>
+    <div class="right-pane div-class">
+        <center><canvas id="sigil-canvas" width="480px" height="480px"></canvas></center>
+        <a>Download Sigil</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 

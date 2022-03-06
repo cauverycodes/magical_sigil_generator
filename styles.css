@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  background-color: black;
+}
+
+button,
+a {
+  display: block;
+  font-size: 16px;
+  margin: auto;
+  padding: 5px;
+  width: 400px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+canvas {
+  margin-bottom: 20px;
+}
+
+label {
+  padding-right: 100px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  color: black;
+  box-sizing: border-box;
+}
+
+.div-class {
+  padding: 15px;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+}
